@@ -70,6 +70,13 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdro
 .hbtn{background:var(--accent);color:#fff;font-weight:800;font-size:14px;padding:10px 18px;border-radius:999px;text-decoration:none}
 /* hero */
 .hero{position:relative;color:#fff;text-align:center;padding:88px 20px;background:linear-gradient(180deg,rgba(18,35,59,.72),rgba(18,35,59,.72)),#26506e;background-size:cover;background-position:center}
+/* hero video */
+.herovid{background:#12233b;padding:0}
+.herovid .vwrap{max-width:960px;margin:0 auto;position:relative;aspect-ratio:16/9;background:#0d1a2c}
+.herovid video{width:100%;height:100%;object-fit:cover;display:block}
+.herovid .vcap{max-width:960px;margin:0 auto;padding:14px 20px 22px;text-align:center;color:#dbe6f2}
+.herovid .vcap b{display:block;color:#fff;font-size:clamp(16px,3vw,21px);font-weight:800;margin-bottom:4px}
+.herovid .vcap span{font-size:13px;opacity:.75}
 .hero .eyebrow{color:#8fe9df}
 .hero h1{font-size:clamp(26px,5.4vw,44px);font-weight:900;line-height:1.35;margin:6px 0 8px;text-shadow:0 2px 14px rgba(0,0,0,.25)}
 .hero p{max-width:640px;margin:0 auto 26px;font-size:clamp(14px,2.4vw,17px);opacity:.96}
@@ -148,6 +155,21 @@ footer{background:var(--navy);color:#9fb2c4;font-size:13px;text-align:center;pad
     <div class="badges"><span>未経験OK</span><span>小学生歓迎</span><span>手ぶらでOK</span><span>江戸川区・松江</span></div>
   </div>
 </section>
+
+<!-- ===== ヒーロー直下：レッスン映像 ===== -->
+<section class="herovid">
+  <div class="vwrap">
+    <video autoplay muted loop playsinline preload="metadata" poster="/lesson-poster.jpg">
+      <source src="/lesson-1080.mp4" type="video/mp4" media="(min-width:768px)">
+      <source src="/lesson-720.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="vcap">
+    <b>これが、MISSIONのレッスンです。</b>
+    <span>コーチが答えを教えるのではなく、子ども自身が「どう越えるか」を考えます。</span>
+  </div>
+</section>
+
 
 <!-- ===== 共感 ===== -->
 <section class="section">
